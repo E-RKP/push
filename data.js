@@ -252,7 +252,7 @@ const personAccount = {
 function signUp(){
 
 const myObejct = {
-  _id: 'ghderc',
+  _id: 'ciao',
   username: 'Lollo',
   email: 'lollo@thomas.com',
   password: '16809',
@@ -264,6 +264,7 @@ const myObejct = {
 for (i=0; i<userss.length;i++){
   if (userss[i]._id === myObejct._id){
     console.log('Utente già esistente')
+    return;
   }
 }
 
@@ -272,4 +273,16 @@ userss.push(myObejct)
 
 signUp();
 console.log(userss)
+
+function signIn(){
+
+  for (i=0; i<userss.length;i++){
+    if (mmmk.value === userss[i].username && mmmu.value === userss[i].password){
+      console.log('puoi entrare')
+    }else{
+      console.log('passowrdo o nome utenti errati')
+      return;
+    }
+  }
+}
 
