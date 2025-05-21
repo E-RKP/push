@@ -178,3 +178,98 @@ for (i=0; i<npersone.length;i++){
 }
 console.log(cc)
 
+users.Abbate = {
+}
+console.log(users)
+const chiavi = Object.entries(users)
+const values = Object.values(users)
+console.log(values)
+console.log(chiavi)
+
+const personAccount = {
+  firstName: 'Luca',
+  lastName: 'Borghi',
+  incomes: 20000,
+  expenses: 5000,
+  totalIncome: {
+    lavoro: 10000,
+    scommesse: 10000
+  },
+  totalExpenses: {
+    schedine: 3000,
+    cibo: 2000
+  },
+  
+  }
+
+    const userss = [
+    {
+        _id: 'ab12ex',
+        username: 'Alex',
+        email: 'alex@alex.com',
+        password: '123123',
+        createdAt:'08/01/2020 9:00 AM',
+        isLoggedIn: false
+    },
+    {
+        _id: 'fg12cy',
+        username: 'Asab',
+        email: 'asab@asab.com',
+        password: '123456',
+        createdAt:'08/01/2020 9:30 AM',
+        isLoggedIn: true
+    },
+    {
+        _id: 'zwf8md',
+        username: 'Brook',
+        email: 'brook@brook.com',
+        password: '123111',
+        createdAt:'08/01/2020 9:45 AM',
+        isLoggedIn: true
+    },
+    {
+        _id: 'eefamr',
+        username: 'Martha',
+        email: 'martha@martha.com',
+        password: '123222',
+        createdAt:'08/01/2020 9:50 AM',
+        isLoggedIn: false
+    },
+    {
+        _id: 'ghderc',
+        username: 'Thomas',
+        email: 'thomas@thomas.com',
+        password: '123333',
+        createdAt:'08/01/2020 10:00 AM',
+        isLoggedIn: false
+    }
+    ];
+
+    
+
+
+
+function signUp(){
+
+const myObejct = {
+  _id: 'ghderc',
+  username: 'Lollo',
+  email: 'lollo@thomas.com',
+  password: '16809',
+  createdAt:'08/01/2024 10:00 AM',
+  isLoggedIn: false
+}
+
+
+for (i=0; i<userss.length;i++){
+  if (userss[i]._id === myObejct._id){
+    console.log('Utente già esistente')
+  }
+}
+
+userss.push(myObejct)
+}
+
+signUp();
+console.log(userss)
+
